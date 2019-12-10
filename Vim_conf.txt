@@ -1,0 +1,83 @@
+" Author:  testbugonly  <testbugonly@gmail.com>
+" Create:  09 Oct 2019
+" Name  :  Vim Configuration File . '~/.vimrc'
+" This is a comment in vimrc. It does not have a closing quote 
+
+
+set nu
+syntax on
+set background=dark
+
+" 括号匹配
+set showmatch
+
+" 搜索时不区分大小写.还可以使用简写(:set ic 和 :set noic)
+set ignorecase
+
+" 显示状态栏和光标当前位置
+"总是显示状态栏
+set laststatus=2
+"显示光标当前位置
+set ruler
+
+" 缩进
+"设置Tab长度为4空格
+set tabstop=4
+"设置自动缩进长度为4空格
+set shiftwidth=4
+"继承前一行的缩进方式.适用于多行注释
+set autoindent
+
+" 打开文件类型检测
+filetype plugin indent on
+
+
+
+
+
+""" 以下为启用
+
+""" -------------
+
+""" -------------
+
+""" -------------
+
+" 粘贴不了添加此行?? set mouse-=a
+
+
+"中文不乱码
+"encoding选项用于缓存的文本、寄存器、Vim 脚本文件等;
+"fileencoding选项是Vim写入文件时采用的编码类型;
+"termencoding选项表示输出到终端时采用的编码类型.
+"set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+"set termencoding=utf-8
+"set encoding=utf-8
+
+
+" 启用鼠标
+"set mouse=a
+"set selection=exclusive
+"set selectmode=mouse,key
+
+
+" 粘贴模式.鼠标右键粘贴时会出现缩进和空格
+"set paste
+
+
+" 显示空格和Tab键
+"set listchars=tab:>-,trail:-
+
+
+
+" 突出当前行
+" set cul
+" set cursorline 的缩写形式
+
+" 突出当前列
+" 设置为dark后putty列标记没有了，需要调整
+" set cuc
+" set cursorcolumn 的缩写形式
+
+" 行尾增加标记
+" set list
